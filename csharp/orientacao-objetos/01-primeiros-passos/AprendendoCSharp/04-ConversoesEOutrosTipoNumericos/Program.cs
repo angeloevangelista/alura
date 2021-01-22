@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _03_CriandoVariaveisPontoFlutuante
+namespace _04_ConversoesEOutrosTiposNumericos
 {
   class Program
   {
