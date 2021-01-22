@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-CriandoVariaveisPontoFlu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-ConversoesEOutrosTipoNumericos", "04-ConversoesEOutrosTipoNumericos\04-ConversoesEOutrosTipoNumericos.csproj", "{23AB8869-EA0C-4B50-9F2B-14A48A84D56E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-CaracteresETextos", "05-CaracteresETextos\05-CaracteresETextos.csproj", "{E472D1C9-453A-4FFD-A6C7-FDA6E49DC81A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,17 @@ Global
 		{23AB8869-EA0C-4B50-9F2B-14A48A84D56E}.Release|x64.Build.0 = Release|Any CPU
 		{23AB8869-EA0C-4B50-9F2B-14A48A84D56E}.Release|x86.ActiveCfg = Release|Any CPU
 		{23AB8869-EA0C-4B50-9F2B-14A48A84D56E}.Release|x86.Build.0 = Release|Any CPU
+		{E472D1C9-453A-4FFD-A6C7-FDA6E49DC81A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E472D1C9-453A-4FFD-A6C7-FDA6E49DC81A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E472D1C9-453A-4FFD-A6C7-FDA6E49DC81A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E472D1C9-453A-4FFD-A6C7-FDA6E49DC81A}.Debug|x64.Build.0 = Debug|Any CPU
+		{E472D1C9-453A-4FFD-A6C7-FDA6E49DC81A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E472D1C9-453A-4FFD-A6C7-FDA6E49DC81A}.Debug|x86.Build.0 = Debug|Any CPU
+		{E472D1C9-453A-4FFD-A6C7-FDA6E49DC81A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E472D1C9-453A-4FFD-A6C7-FDA6E49DC81A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E472D1C9-453A-4FFD-A6C7-FDA6E49DC81A}.Release|x64.ActiveCfg = Release|Any CPU
+		{E472D1C9-453A-4FFD-A6C7-FDA6E49DC81A}.Release|x64.Build.0 = Release|Any CPU
+		{E472D1C9-453A-4FFD-A6C7-FDA6E49DC81A}.Release|x86.ActiveCfg = Release|Any CPU
+		{E472D1C9-453A-4FFD-A6C7-FDA6E49DC81A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
