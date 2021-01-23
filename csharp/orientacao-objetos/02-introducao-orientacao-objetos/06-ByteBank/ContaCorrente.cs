@@ -2,35 +2,38 @@ namespace _06_ByteBank
 {
   class ContaCorrente
   {
-    public Cliente titular;
-    public int agencia;
-    public int numero;
-    private double saldo = 100;
+    public Cliente Titular { get; set; }
 
-    public double ObterSaldo()
-    {
-      return this.saldo;
-    }
+    public int Agencia { get; set; }
+    public int Numero { get; set; }
+    private double _saldo = 100;
 
-    public void DefinirSaldo(double valor)
+    public double Saldo
     {
-      if (valor > 0)
-        this.saldo = valor;
+      get
+      {
+        return this._saldo;
+      }
+      set
+      {
+        if (value > 0)
+          this._saldo = value;
+      }
     }
 
     public bool Sacar(double valor)
     {
-      if (this.saldo < valor)
+      if (this._saldo < valor)
         return false;
 
-      this.saldo -= valor;
+      this._saldo -= valor;
       return true;
     }
 
     public void Depositar(double valor)
     {
       if (valor > 0)
-        this.saldo += valor;
+        this._saldo += valor;
     }
 
     public bool Transferir(double valor, ContaCorrente contaDestino)
