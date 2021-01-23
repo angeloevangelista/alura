@@ -17,13 +17,13 @@ namespace _03_ByteBank
       contaDaGabrielaCosta.numero = 863452;
 
       Console.WriteLine(
-        "Igualdade por referência: " + contaDaGabriela == contaDaGabrielaCosta
+        "Igualdade por referência: " + (contaDaGabriela == contaDaGabrielaCosta)
       );
 
       int idade = 27;
       int idadeOutraVez = 27;
 
-      Console.WriteLine("Igualdade por valor: " + idade == idadeOutraVez);
+      Console.WriteLine("Igualdade por valor: " + (idade == idadeOutraVez));
 
       contaDaGabriela = contaDaGabrielaCosta;
 
