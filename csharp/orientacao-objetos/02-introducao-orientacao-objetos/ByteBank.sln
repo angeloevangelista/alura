@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-ByteBank", "02-ByteBank\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-ByteBank", "03-ByteBank\03-ByteBank.csproj", "{522EEF26-7597-4C47-87DC-9DFB7800C75F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-ByteBank", "04-ByteBank\04-ByteBank.csproj", "{BA488C87-2AFA-40D3-86F5-178DCFF7404B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{522EEF26-7597-4C47-87DC-9DFB7800C75F}.Release|x64.Build.0 = Release|Any CPU
 		{522EEF26-7597-4C47-87DC-9DFB7800C75F}.Release|x86.ActiveCfg = Release|Any CPU
 		{522EEF26-7597-4C47-87DC-9DFB7800C75F}.Release|x86.Build.0 = Release|Any CPU
+		{BA488C87-2AFA-40D3-86F5-178DCFF7404B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA488C87-2AFA-40D3-86F5-178DCFF7404B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA488C87-2AFA-40D3-86F5-178DCFF7404B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BA488C87-2AFA-40D3-86F5-178DCFF7404B}.Debug|x64.Build.0 = Debug|Any CPU
+		{BA488C87-2AFA-40D3-86F5-178DCFF7404B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BA488C87-2AFA-40D3-86F5-178DCFF7404B}.Debug|x86.Build.0 = Debug|Any CPU
+		{BA488C87-2AFA-40D3-86F5-178DCFF7404B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA488C87-2AFA-40D3-86F5-178DCFF7404B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA488C87-2AFA-40D3-86F5-178DCFF7404B}.Release|x64.ActiveCfg = Release|Any CPU
+		{BA488C87-2AFA-40D3-86F5-178DCFF7404B}.Release|x64.Build.0 = Release|Any CPU
+		{BA488C87-2AFA-40D3-86F5-178DCFF7404B}.Release|x86.ActiveCfg = Release|Any CPU
+		{BA488C87-2AFA-40D3-86F5-178DCFF7404B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
