@@ -19,4 +19,13 @@ class ContaCorrente
     if (valor > 0)
       this.saldo += valor;
   }
+
+  public bool Transferir(double valor, ContaCorrente contaDestino)
+  {
+    if (!(valor > 0) || !this.Sacar(valor))
+      return false;
+
+    contaDestino.Depositar(valor);
+    return true;
+  }
 }
