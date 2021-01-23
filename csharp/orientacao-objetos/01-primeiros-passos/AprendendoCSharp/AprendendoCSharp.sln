@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-CalculandoInvestimentoLo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-UsandoBreak", "13-UsandoBreak\13-UsandoBreak.csproj", "{B3E059B7-9CB5-477E-9E99-94F655E5C836}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "x-challengesFatorial", "x-challengesFatorial\x-challengesFatorial.csproj", "{2412C6B6-C563-41FF-B3FF-96D7ABDE8633}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -198,5 +200,17 @@ Global
 		{B3E059B7-9CB5-477E-9E99-94F655E5C836}.Release|x64.Build.0 = Release|Any CPU
 		{B3E059B7-9CB5-477E-9E99-94F655E5C836}.Release|x86.ActiveCfg = Release|Any CPU
 		{B3E059B7-9CB5-477E-9E99-94F655E5C836}.Release|x86.Build.0 = Release|Any CPU
+		{2412C6B6-C563-41FF-B3FF-96D7ABDE8633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2412C6B6-C563-41FF-B3FF-96D7ABDE8633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2412C6B6-C563-41FF-B3FF-96D7ABDE8633}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2412C6B6-C563-41FF-B3FF-96D7ABDE8633}.Debug|x64.Build.0 = Debug|Any CPU
+		{2412C6B6-C563-41FF-B3FF-96D7ABDE8633}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2412C6B6-C563-41FF-B3FF-96D7ABDE8633}.Debug|x86.Build.0 = Debug|Any CPU
+		{2412C6B6-C563-41FF-B3FF-96D7ABDE8633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2412C6B6-C563-41FF-B3FF-96D7ABDE8633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2412C6B6-C563-41FF-B3FF-96D7ABDE8633}.Release|x64.ActiveCfg = Release|Any CPU
+		{2412C6B6-C563-41FF-B3FF-96D7ABDE8633}.Release|x64.Build.0 = Release|Any CPU
+		{2412C6B6-C563-41FF-B3FF-96D7ABDE8633}.Release|x86.ActiveCfg = Release|Any CPU
+		{2412C6B6-C563-41FF-B3FF-96D7ABDE8633}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
