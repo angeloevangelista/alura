@@ -7,6 +7,8 @@ namespace ByteBank.SistemaAgencia
   {
     static void Main(string[] args)
     {
+      Lista<int> lista = new Lista<int>();
+
       Console.ReadLine();
     }
 
