@@ -21,9 +21,9 @@ namespace ByteBank.SistemaAgencia
       numeros.Add(6);
       numeros.Add(8);
 
-      // numeros.AddRange(10, 20, 30, 40);
+      numeros.AdicionarVarios(10, 20, 30, 40);
 
-      ListExtensoes.AdicionarVarios(numeros, 10, 20, 30, 40);
+      // ListExtensoes.AdicionarVarios(numeros, 10, 20, 30, 40);
 
       Console.ReadLine();
     }
