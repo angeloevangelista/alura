@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ByteBank.Modelos;
-using ByteBank.Modelos.Funcionarios;
 
 namespace ByteBank.SistemaAgencia
 {
@@ -13,6 +8,50 @@ namespace ByteBank.SistemaAgencia
     static void Main(string[] args)
     {
       Console.ReadLine();
+    }
+
+    static int SomarVarios(params int[] numeros)
+    {
+      int acumulador = 0;
+      foreach (int numero in numeros)
+      {
+        acumulador += numero;
+      }
+      return acumulador;
+    }
+
+    static void TestaListaContaCorrente()
+    {
+      ListaDeContaCorrente lista = new ListaDeContaCorrente();
+
+      ContaCorrente contaDoGui = new ContaCorrente(11111, 1111111);
+
+      ContaCorrente[] contas = new ContaCorrente[]
+      {
+        contaDoGui,
+        new ContaCorrente(874, 5679787),
+        new ContaCorrente(874, 5679754)
+      };
+
+      lista.AdicionarVarios(contas);
+
+      lista.AdicionarVarios(
+        contaDoGui,
+        new ContaCorrente(874, 5679787),
+        new ContaCorrente(874, 5679787),
+        new ContaCorrente(874, 5679787),
+        new ContaCorrente(874, 5679787),
+        new ContaCorrente(874, 5679787),
+        new ContaCorrente(874, 5679787),
+        new ContaCorrente(874, 5679787),
+        new ContaCorrente(874, 5679787)
+      );
+
+      for (int i = 0; i < lista.Tamanho; i++)
+      {
+        ContaCorrente itemAtual = lista[i];
+        Console.WriteLine($"Item na posição {i} = Conta {itemAtual.Numero}/{itemAtual.Agencia}");
+      }
     }
 
     public static void TestaArrayContaCorrente()
