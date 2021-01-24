@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +13,35 @@ namespace ByteBank.SistemaAgencia
     static void Main(string[] args)
     {
       Console.ReadLine();
+    }
+
+    public static void TestaArrayInt()
+    {
+      // ARRAY de inteiros, com 5 posições!
+      int[] idades = null;
+      idades = new int[3];
+
+      idades[0] = 15;
+      idades[1] = 28;
+      idades[2] = 35;
+      //idades[3] = 50;
+      //idades[4] = 28;
+
+      Console.WriteLine(idades.Length);
+
+      int acumulador = 0;
+      for (int indice = 0; indice < idades.Length; indice++)
+      {
+        int idade = idades[indice];
+
+        Console.WriteLine($"Acessando o array idades no índice {indice}");
+        Console.WriteLine($"Valor de idades[{indice}] = {idade}");
+
+        acumulador += idade;
+      }
+
+      int media = acumulador / idades.Length;
+      Console.WriteLine($"Média de idades = {media}");
     }
   }
 }
