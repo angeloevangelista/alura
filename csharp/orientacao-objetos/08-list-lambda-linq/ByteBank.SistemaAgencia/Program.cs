@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using ByteBank.Modelos;
 
 namespace ByteBank.SistemaAgencia
@@ -7,7 +8,22 @@ namespace ByteBank.SistemaAgencia
   {
     static void Main(string[] args)
     {
-      Lista<int> lista = new Lista<int>();
+      List<int> numeros = new List<int>();
+
+      numeros.Add(1);
+      numeros.Add(3);
+      numeros.Add(5);
+      numeros.Add(7);
+      numeros.Add(9);
+      numeros.Add(0);
+      numeros.Add(2);
+      numeros.Add(4);
+      numeros.Add(6);
+      numeros.Add(8);
+
+      // numeros.AddRange(10, 20, 30, 40);
+
+      ListExtensoes.AdicionarVarios(numeros, 10, 20, 30, 40);
 
       Console.ReadLine();
     }
