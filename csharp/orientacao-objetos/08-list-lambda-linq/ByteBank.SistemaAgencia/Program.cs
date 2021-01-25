@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using ByteBank.Modelos;
 using ByteBank.SistemaAgencia.Comparadores;
 using ByteBank.SistemaAgencia.Extensoes;
@@ -22,11 +23,20 @@ namespace ByteBank.SistemaAgencia
 
       // contas.Sort(); ~~> Implementação em IComparable
 
-      contas.Sort(new ComparadorContaCorrentePorAgencia());
+      // contas.Sort(new ComparadorContaCorrentePorAgencia());
 
-      foreach (var conta in contas)
+      var contasOrdenadas = contas.OrderBy(conta =>
       {
-        Console.WriteLine($"Conta número {conta.Numero}, ag. {conta.Agencia}");
+        if (conta == null)
+          return int.MaxValue;
+
+        return conta.Numero;
+      });
+
+      foreach (var conta in contasOrdenadas)
+      {
+        if (conta != null)
+          Console.WriteLine($"Conta número {conta.Numero}, ag. {conta.Agencia}");
       }
 
       Console.ReadLine();
