@@ -125,6 +125,7 @@ namespace ByteBank.Modelos
       if (conta == null)
         return -1;
 
+
       return Numero - conta.Numero;
 
       // if (Numero < conta.Numero)
@@ -139,7 +140,8 @@ namespace ByteBank.Modelos
 
       // return 1;
 
-      // Console.WriteLine($"{Numero} - {conta.Numero} = {Numero - conta.Numero}");
+      // Implementação já existente no tipo INT
+      // return this.Numero.CompareTo(conta.Numero);
     }
   }
 }
