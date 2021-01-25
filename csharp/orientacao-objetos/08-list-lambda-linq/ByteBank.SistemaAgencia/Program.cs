@@ -11,22 +11,20 @@ namespace ByteBank.SistemaAgencia
     {
       // "Que dahora cara kkkkkk".AsConsoleError();
 
-      List<int> numeros = new List<int>();
+      var contas = new List<ContaCorrente>()
+      {
+        new ContaCorrente(123, 97381),
+        new ContaCorrente(122, 32346),
+        new ContaCorrente(353, 23534),
+        new ContaCorrente(236, 34923),
+      };
 
-      numeros.Add(1);
-      numeros.Add(3);
-      numeros.Add(5);
-      numeros.Add(7);
-      numeros.Add(9);
-      numeros.Add(0);
-      numeros.Add(2);
-      numeros.Add(4);
-      numeros.Add(6);
-      numeros.Add(8);
+      contas.Sort();
 
-      numeros.AdicionarVarios(10, 20, 30, 40);
-
-      // ListExtensoes.AdicionarVarios(numeros, 10, 20, 30, 40);
+      foreach (var conta in contas)
+      {
+        Console.WriteLine($"Conta número {conta.Numero}, ag. {conta.Agencia}");
+      }
 
       Console.ReadLine();
     }
@@ -39,6 +37,29 @@ namespace ByteBank.SistemaAgencia
         acumulador += numero;
       }
       return acumulador;
+    }
+
+    static void TestaSort()
+    {
+      List<int> numeros = new List<int>();
+
+      numeros.Add(5);
+      numeros.Add(6);
+      numeros.Add(9);
+      numeros.Add(0);
+      numeros.Add(2);
+      numeros.Add(4);
+      numeros.Add(3);
+      numeros.Add(8);
+      numeros.Add(7);
+      numeros.Add(1);
+      numeros.AdicionarVarios(30, 40, 10, 20, -1234);
+      // ListExtensoes.AdicionarVarios(numeros, 10, 20, 30, 40);
+
+      numeros.Sort();
+
+      foreach (var numero in numeros)
+        Console.WriteLine(numero);
     }
 
     static void TestaListaContaCorrente()
