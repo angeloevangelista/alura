@@ -26,9 +26,9 @@ namespace ByteBank.SistemaAgencia
 
       // contas.Sort(new ComparadorContaCorrentePorAgencia());
 
-      var contasNaoNulas = contas.Where(conta => conta != null);
-
-      var contasOrdenadas = contasNaoNulas.OrderBy(conta => conta.Numero);
+      var contasOrdenadas = contas
+        .Where(conta => conta != null)
+        .OrderBy(conta => conta.Numero);
 
       foreach (var conta in contasOrdenadas)
       {
