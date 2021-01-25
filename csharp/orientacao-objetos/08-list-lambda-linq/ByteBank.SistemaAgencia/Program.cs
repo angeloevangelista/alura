@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using ByteBank.Modelos;
+using ByteBank.SistemaAgencia.Extensoes;
 
 namespace ByteBank.SistemaAgencia
 {
@@ -8,6 +9,8 @@ namespace ByteBank.SistemaAgencia
   {
     static void Main(string[] args)
     {
+      // "Que dahora cara kkkkkk".AsConsoleError();
+
       List<int> numeros = new List<int>();
 
       numeros.Add(1);

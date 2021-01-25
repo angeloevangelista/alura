@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace ByteBank
+namespace ByteBank.SistemaAgencia.Extensoes
 {
   public static class ListExtensoes
   {
