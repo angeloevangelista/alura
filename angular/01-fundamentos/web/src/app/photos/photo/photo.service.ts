@@ -1,16 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-export interface IPhoto {
-  allowComments: boolean;
-  comments: number;
-  description: string;
-  id: number;
-  likes: number;
-  postDate: Date;
-  url: string;
-  userId: number;
-}
+import { IPhoto } from './photo';
 
 @Injectable({
   providedIn: 'root', // uma instancia para todo o app
