@@ -1,16 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
-interface IPhoto {
-  allowComments: boolean;
-  comments: number;
-  description: string;
-  id: number;
-  likes: number;
-  postDate: Date;
-  url: string;
-  userId: number;
-}
+import { IPhoto, PhotoService } from './photos/photo/photo.service';
 
 @Component({
   selector: 'app-root',
@@ -20,12 +10,10 @@ interface IPhoto {
 export class AppComponent {
   photos: IPhoto[] = [];
 
-  constructor(private httpClient: HttpClient) {
-    this.httpClient
-      .get<IPhoto[]>('http://localhost:3000/flavio/photos')
-      .subscribe({
-        next: (response) => (this.photos = response),
-        error: (err) => console.error(err),
-      });
+  constructor(photoService: PhotoService) {
+    photoService.listByUser('flavio').subscribe({
+      next: (response) => (this.photos = response),
+      error: (err) => console.error(err),
+    });
   }
 }
