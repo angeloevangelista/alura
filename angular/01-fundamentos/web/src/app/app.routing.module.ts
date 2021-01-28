@@ -7,7 +7,7 @@ import { NotFoundComponent } from './errors/not-found/not-found.component';
 
 const routes: Routes = [
   {
-    path: 'users/flavio',
+    path: 'users/:username',
     component: PhotoListComponent,
   },
   {
