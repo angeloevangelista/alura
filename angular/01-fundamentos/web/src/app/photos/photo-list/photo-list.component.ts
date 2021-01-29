@@ -12,6 +12,8 @@ export class PhotoListComponent {
   username: string;
   photos: IPhoto[] = [];
 
+  filter = '';
+
   constructor(
     private photoService: PhotoService,
     private route: ActivatedRoute
