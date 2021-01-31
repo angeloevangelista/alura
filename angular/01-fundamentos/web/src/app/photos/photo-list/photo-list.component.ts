@@ -29,6 +29,7 @@ export class PhotoListComponent implements OnInit, OnDestroy {
     this.photos = this.route.snapshot.data['photos'];
     this.username = this.route.snapshot.params['username'];
 
+    console.log(this)
     this.debounce
       .pipe(debounceTime(400))
       .subscribe((filter) => (this.filter = filter));
