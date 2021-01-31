@@ -15,7 +15,7 @@ import { PhotoService } from '../photo/photo.service';
 export class PhotoListResolver implements Resolve<Observable<IPhoto[]>> {
   constructor(private photoService: PhotoService) {}
 
-  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
+  resolve(route: ActivatedRouteSnapshot) {
     const username = route.params['username'];
 
     return this.photoService.listByUser(username);
