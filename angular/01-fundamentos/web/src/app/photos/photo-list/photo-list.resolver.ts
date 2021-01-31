@@ -18,6 +18,6 @@ export class PhotoListResolver implements Resolve<Observable<IPhoto[]>> {
   resolve(route: ActivatedRouteSnapshot) {
     const username = route.params['username'];
 
-    return this.photoService.listByUser(username);
+    return this.photoService.listByUserPaginated(username, 1);
   }
 }
