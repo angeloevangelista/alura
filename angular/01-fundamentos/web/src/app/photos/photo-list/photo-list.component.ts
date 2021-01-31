@@ -2,7 +2,6 @@ import { Component, Pipe } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { IPhoto } from '../photo/photo';
-import { PhotoService } from '../photo/photo.service';
 
 @Component({
   selector: 'ap-photo-list',
@@ -14,17 +13,9 @@ export class PhotoListComponent {
 
   filter = '';
 
-  constructor(
-    private photoService: PhotoService,
-    private route: ActivatedRoute
-  ) {}
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.username = this.route.snapshot.params['username'];
-
-    this.photoService.listByUser(this.username).subscribe({
-      next: (response) => (this.photos = response),
-      error: (err) => console.error(err),
-    });
+    this.photos = this.route.snapshot.data['photos'];
   }
 }
