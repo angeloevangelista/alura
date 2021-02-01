@@ -3,7 +3,7 @@
 </p>
 
 <ol class="list-unstyled">
-  <li class="row" *ngFor="let col of rows">
+  <li class="row no-gutters" *ngFor="let col of rows">
     <div class="col-4" *ngFor="let photo of col">
       <ap-photo [url]="photo.url" [description]="photo.description"></ap-photo>
     </div>
