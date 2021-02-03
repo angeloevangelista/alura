@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { AuthService } from 'src/app/core/auth.service';
@@ -9,6 +9,8 @@ import { AuthService } from 'src/app/core/auth.service';
 })
 export class SignInComponent implements OnInit {
   loginForm: FormGroup;
+
+  @ViewChild('usernameInput') usernameInput: ElementRef<HTMLInputElement>;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -35,7 +37,10 @@ export class SignInComponent implements OnInit {
       },
       error: (err) => {
         alert('Invalid username or password.');
+
         this.loginForm.reset();
+        this.usernameInput.nativeElement.focus();
+
         console.log(err);
       },
     });
