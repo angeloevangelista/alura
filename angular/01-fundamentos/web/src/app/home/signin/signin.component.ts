@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -11,7 +12,8 @@ export class SignInComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private authService: AuthService
+    private authService: AuthService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -28,13 +30,13 @@ export class SignInComponent implements OnInit {
     };
 
     this.authService.authenticate(loginParams).subscribe({
-      next: (response) => {
-        alert('Authenticated.');
-        console.log(response);
+      next: (loggedUser) => {
+        this.router.navigate(['users', loggedUser.name]);
       },
-      error: () => {
+      error: (err) => {
         alert('Invalid username or password.');
         this.loginForm.reset();
+        console.log(err);
       },
     });
   }
