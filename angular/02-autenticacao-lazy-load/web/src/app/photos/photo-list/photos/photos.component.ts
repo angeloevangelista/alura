@@ -1,0 +1,26 @@
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+
+import { IPhoto } from '../../photo/photo';
+
+@Component({
+  selector: 'ap-photos',
+  templateUrl: './photos.component.html',
+})
+export class PhotosComponent implements OnChanges {
+  rows: IPhoto[][];
+
+  @Input() photos: IPhoto[];
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes.photos) this.rows = this.groupColumns(this.photos);
+  }
+
+  groupColumns(photos: IPhoto[]): IPhoto[][] {
+    const newRows = [];
+
+    for (let index = 0; index < photos.length; index += 3)
+      newRows.push(photos.slice(index, index + 3));
+
+    return newRows;
+  }
+}
