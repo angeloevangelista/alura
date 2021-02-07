@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpResponse } from '@angular/common/http';
-import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
-import { TokenService } from '../token/token.service';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+import { UserService } from '../user/user.service';
 
 interface ILoginParams {
   username: string;
@@ -23,7 +23,7 @@ export class AuthService {
 
   constructor(
     private httpClient: HttpClient,
-    private tokenService: TokenService
+    private userService: UserService
   ) {}
 
   authenticate({ password, username }: ILoginParams) {
@@ -42,7 +42,7 @@ export class AuthService {
         tap((response) => {
           const authToken = response.headers.get('x-access-token');
 
-          authToken && this.tokenService.setToken(authToken);
+          authToken && this.userService.setToken(authToken);
         })
       );
   }
