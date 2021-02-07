@@ -7,8 +7,8 @@ import { DarkenOnHoverModule } from 'src/app/shared/directives/darken-on-hover/d
 
 import { PhotoListComponent } from './photo-list.component';
 import { PhotosComponent } from './photos/photos.component';
-import { LoadButtonComponent } from './load-button/load-button.component';
 import { SearchComponent } from './search/search.component';
+import { LoadButtonComponent } from './load-button/load-button.component';
 
 import { FilterByDescriptionPipe } from './filter-by-description.pipe';
 

@@ -2,8 +2,8 @@ import { Router } from '@angular/router';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { AuthService } from 'src/app/core/auth/auth.service';
-import { PlatformDetectorService } from 'src/app/core/patform-detector/patform-detector.service';
+import { AuthService } from 'src/app/core/services/auth/auth.service';
+import { PlatformDetectorService } from 'src/app/core/services/patform-detector/patform-detector.service';
 
 @Component({
   templateUrl: './signin.component.html',
