@@ -28,6 +28,12 @@ export class UserService {
     return this._userSubject.asObservable();
   }
 
+  logOut() {
+    this.tokenService.removeToken();
+
+    this._userSubject.next(null);
+  }
+
   private decodeAndNotify() {
     const token = this.tokenService.getToken();
 
