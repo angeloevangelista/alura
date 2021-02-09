@@ -18,6 +18,10 @@ export class UserService {
     this.tokenService.hasToken && this.decodeAndNotify();
   }
 
+  get isLogged() {
+    return this.tokenService.hasToken;
+  }
+
   setToken(token: string) {
     this.tokenService.setToken(token);
 
