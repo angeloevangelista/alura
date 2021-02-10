@@ -65,7 +65,7 @@
       class="text-danger d-block mt-2"
     ></ap-input-error-message>
     <ap-input-error-message
-      *ngIf="signupForm.get('username').errors?.pattern"
+      *ngIf="signupForm.get('username').errors?.lowercase"
       [message]="'Username must be in lower case'"
       class="text-danger d-block mt-2"
     ></ap-input-error-message>
